@@ -1,0 +1,14 @@
+{
+  "name": "deployhub_react",
+  "framework": "React",
+  "category": "Frontend",
+  "runtime": "static",
+  "port": 80,
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "dist",
+  "healthCheck": {
+    "path": "/",
+    "expectedStatus": 200,
+    "timeoutSeconds": 10
+  }
+}
